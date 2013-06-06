@@ -1,0 +1,7 @@
+[user]
+	name = Nick Kouris
+	email = nick.kouris@decisiondesk.com
+[color]
+	ui = true
+[alias]
+	clog = log --no-color --pretty=tformat:'%h  %d %s (%cr) <%an> ' --reverse --abbrev-commit
