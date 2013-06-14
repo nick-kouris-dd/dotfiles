@@ -5,4 +5,4 @@
 	ui = true
 [alias]
 	clog = log --no-color --pretty=tformat:'%h  %d %s (%cr) <%an> ' --reverse --abbrev-commit
-	dlog = log --oneline origin/current-prod..origin/current-stage
+	dlog = log --oneline master..origin/current-prod
