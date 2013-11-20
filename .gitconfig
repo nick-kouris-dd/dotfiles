@@ -1,9 +1,24 @@
 [user]
 	name = Nick Kouris
 	email = nick.kouris@decisiondesk.com
+
 [color]
 	ui = true
+
 [alias]
-	clog = log --no-color --pretty=tformat:'%h  %d %s (%cr) <%an> ' --reverse --abbrev-commit
-	dlog = log --oneline origin/current-prod..origin/master 
-	log20 = log -20 --oneline origin/master
+	clog = log --date=short --pretty=format:\"%h %cd %an %s\"
+
+	dlog = log --date=short --pretty=format:\"%h %cd %an %s\" origin/current-prod..origin/master
+
+        # placeholder formatting:
+        #
+        # %h = abbreviated commit hash
+        # %cd = committer date
+        # %an = author name 
+        # %s = subject
+ 
+[remote "ddesk"]
+	url = https://github.com/DecisionDesk/ddesk.git
+
+[remote "dotfiles"]
+    url = https://github.com/nick-kouris-dd/dotfiles.git
